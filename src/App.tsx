@@ -2,9 +2,6 @@ import React, { Component, lazy, Suspense } from 'react';
 import './styles.scss';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 const ComponentA = withRouter(lazy(() => import('./components/component-a/ComponentA.component')));
 
 class App extends Component {
@@ -20,16 +17,6 @@ class App extends Component {
               </Switch>
             </Suspense>
           </main>
-          <ToastContainer 
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover/>
         </div>
     );
   }
