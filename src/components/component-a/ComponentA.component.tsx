@@ -1,4 +1,4 @@
-import React, { lazy, useState } from "react";
+import React, { useState } from "react";
 import "./ComponentA.component.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faFlag } from '@fortawesome/free-solid-svg-icons'
@@ -6,11 +6,7 @@ import { faCoffee, faFlag } from '@fortawesome/free-solid-svg-icons'
 // import Paperclip from '../../../public/images/Paperclip.png';
 
 function ComponentA() {
-  const [key, setKey] = useState("all");
 
-  const handleChange = (e: any) => {
-    setKey(e);
-  };
 
   const renderFontAwsome = () => {
     return (
