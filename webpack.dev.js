@@ -36,7 +36,7 @@ module.exports = {
     stats: 'errors-warnings', // don't show bundle file generate in terminal
     overlay: true, 
     https: false,
-    writeToDisk: true,
+    writeToDisk: false,
     proxy: {
       '/api': {
         target: 'https://other-server.example.com',
